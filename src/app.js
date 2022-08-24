@@ -10,22 +10,12 @@ var adj = ["great", "big"];
 var noun = ["jogger", "racoon"];
 var doc = [".com", ".ve", ".es", ".net"];
 
-function randomNumber(array) {
-  return Math.floor(Math.random() * array.length);
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      for (let l = 0; l < doc.length; l++) {
+        console.log(pronoun[i] + adj[j] + noun[k] + doc[l]);
+      }
+    }
+  }
 }
-window.onload = function() {
-  let generator = document.getElementById("dom-gen");
-  generator.innerHTML =
-    pronoun[randomNumber(pronoun)] +
-    adj[randomNumber(adj)] +
-    noun[randomNumber(noun)] +
-    doc[randomNumber(doc)];
-
-  console.log(
-    (generator.innerHTML =
-      pronoun[randomNumber(pronoun)] +
-      adj[randomNumber(adj)] +
-      noun[randomNumber(noun)] +
-      doc[randomNumber(doc)])
-  );
-};
