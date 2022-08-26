@@ -10,15 +10,15 @@ var adj = ["great", "big"];
 var noun = ["puedes", "atreve", "frent", "racoom", "paco", "roger"];
 var dom = ["com", "ve", "es", "net", "co", "er"];
 
-const hack = (sNouns, arrDomain) => {
+const hack = (Nouns, Domain) => {
   let result = "";
-  let sFinalCharacter = "";
-  for (let index = 0; index < arrDomain.length; index++) {
+  let FinalCharacter = "";
+  for (let index = 0; index < Domain.length; index++) {
     let element = arrDomain;
-    if (sNouns.length > element.length) {
-      sFinalCharacter = sNouns.slice(-1 * element.length);
-      if (sFinalCharacter === element) {
-        result = sNouns.slice(0, -1 * element.length) + "." + element;
+    if (Nouns.length > element.length) {
+      FinalCharacter = Nouns.slice(-1 * element.length);
+      if (FinalCharacter === element) {
+        result = Nouns.slice(0, -1 * element.length) + "." + element;
         return result;
       }
     }
