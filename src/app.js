@@ -14,7 +14,7 @@ const hack = (Nouns, Domain) => {
   let result = "";
   let FinalCharacter = "";
   for (let index = 0; index < Domain.length; index++) {
-    let element = arrDomain;
+    let element = Domain;
     if (Nouns.length > element.length) {
       FinalCharacter = Nouns.slice(-1 * element.length);
       if (FinalCharacter === element) {
@@ -23,7 +23,7 @@ const hack = (Nouns, Domain) => {
       }
     }
   }
-  return sNouns + ".com";
+  return Nouns + ".com";
 };
 
 for (let i = 0; i < pronoun.length; i++) {
